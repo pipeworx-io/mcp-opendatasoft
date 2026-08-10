@@ -2,8 +2,6 @@
 
 [Opendatasoft](https://www.opendatasoft.com) portal MCP — generic client for the ~3000 public OpenDataSoft portals (e.g. `public.opendatasoft.com`, `data.paris.fr`, `data.economie.gouv.fr`, etc.). Keyless for public data.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
-
 ## Tools
 
 - `datasets(instance?, q?, rows?, start?, sort?, facet?)` — search datasets on an instance
@@ -32,7 +30,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1422+ data sources:
 
 ```json
 {
@@ -56,7 +54,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [Docs and guides](https://pipeworx.io/docs)
+- [All tools and guides](https://github.com/pipeworx-io/examples)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License

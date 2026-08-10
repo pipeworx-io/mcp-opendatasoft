@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/opendatasoft",
   "title": "Opendatasoft",
-  "description": "Generic Opendatasoft portal client (3000+ public OpenDataSoft instances)",
-  "version": "0.1.0",
+  "description": "Opendatasoft (generic portal) MCP.",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/opendatasoft",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-opendatasoft",
