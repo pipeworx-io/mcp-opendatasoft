@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-opendatasoft",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Opendatasoft (generic portal) MCP.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-opendatasoft": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "opendatasoft"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-opendatasoft"
+    "url": "git+https://github.com/pipeworx-io/mcp-opendatasoft.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-734a6f0dfcd071a65212343d6893dcbb6fcc750c2d3036a9b350010ac5b26d70",
+    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
   }
 }
