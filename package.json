@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-opendatasoft",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Opendatasoft (generic portal) MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-734a6f0dfcd071a65212343d6893dcbb6fcc750c2d3036a9b350010ac5b26d70",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "sourceHash": "v1-25cf0122d6de709462ed2b4774edb1af58b97650e24389f68d4a0298683124b9",
+    "sourceCommit": "97740c6ee04c8acbfe7dddcacfde9e88ff2b9ca0"
   }
 }
