@@ -1,0 +1,122 @@
+[
+  {
+    "name": "datasets",
+    "description": "Search datasets on any Opendatasoft portal (default public.opendatasoft.com) by keyword, with optional sort and facet filters; returns dataset IDs, titles, and field summaries.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "instance": {
+          "type": "string",
+          "description": "Default public.opendatasoft.com."
+        },
+        "q": {
+          "type": "string"
+        },
+        "rows": {
+          "type": "number"
+        },
+        "start": {
+          "type": "number"
+        },
+        "sort": {
+          "type": "string"
+        },
+        "facet": {
+          "type": "string",
+          "description": "Comma-sep facets to include."
+        }
+      }
+    }
+  },
+  {
+    "name": "dataset",
+    "description": "Fetch schema and metadata for a single Opendatasoft dataset by dataset_id; returns field definitions, record count, and dataset description from the specified portal instance.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "dataset_id": {
+          "type": "string"
+        },
+        "instance": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "dataset_id"
+      ]
+    }
+  },
+  {
+    "name": "records",
+    "description": "Query records from an Opendatasoft dataset with optional keyword search, ODSQL WHERE/SELECT/GROUP BY/ORDER BY clauses, pagination, and projection; returns matching rows as JSON.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "dataset_id": {
+          "type": "string"
+        },
+        "q": {
+          "type": "string"
+        },
+        "where": {
+          "type": "string"
+        },
+        "select": {
+          "type": "string"
+        },
+        "group_by": {
+          "type": "string"
+        },
+        "order_by": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "number"
+        },
+        "offset": {
+          "type": "number"
+        },
+        "instance": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "dataset_id"
+      ]
+    }
+  },
+  {
+    "name": "facets",
+    "description": "Retrieve distinct values and counts for a named facet field within an Opendatasoft dataset; useful for enumerating categories or filtering options before querying records.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "dataset_id": {
+          "type": "string"
+        },
+        "facet": {
+          "type": "string"
+        },
+        "instance": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "dataset_id",
+        "facet"
+      ]
+    }
+  },
+  {
+    "name": "instance_info",
+    "description": "Fetch catalog-level metadata for an Opendatasoft portal instance (total dataset count, themes, languages); defaults to public.opendatasoft.com.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "instance": {
+          "type": "string"
+        }
+      }
+    }
+  }
+]
